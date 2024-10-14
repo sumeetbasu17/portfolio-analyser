@@ -71,6 +71,13 @@
       <artifactId>jakarta.persistence-api</artifactId>
       <version>3.1.0</version>
     </dependency>
+
+    <dependency>
+        <groupId>com.github.haifengl</groupId>
+        <artifactId>smile-core</artifactId>
+        <version>2.4.0</version> <!-- Use a stable version -->
+    </dependency>
+
   </dependencies>
 
   <build>
