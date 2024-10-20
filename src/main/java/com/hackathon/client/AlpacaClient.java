@@ -13,11 +13,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AlpacaClient {
-    private static final String BASE_URL = "https://paper-api.alpaca.markets";
+    private static final String BASE_URL = "https://paper-api.alpaca.markets/v2";
     private static final String DATA_URL = "https://data.alpaca.markets/v2";
     private static final String POSITIONS_ENDPOINT = "/v2/positions";
-    private static final String API_KEY = "<Your_Alpaca_API_Key>";
-    private static final String API_SECRET = "<Your_Alpaca_API_Secret>";
+    private static final String API_KEY = "PK7CCLTO7LPDW0PIQ20H";
+    private static final String API_SECRET = "Aun2P7vqMauzIbHkexfdyIn1hjB3LL2E9qVr8Nu3";
 
     private OkHttpClient httpClient;
     private Gson gson;

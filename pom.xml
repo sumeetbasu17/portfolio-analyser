@@ -84,12 +84,6 @@
       <version>9.0.0</version> <!-- Check for the latest version -->
     </dependency>
 
-    <dependency>
-        <groupId>com.google.firebase</groupId>
-        <artifactId>firebase-genkit</artifactId>
-        <version>1.0.0</version>
-    </dependency>
-
   </dependencies>
 
   <build>

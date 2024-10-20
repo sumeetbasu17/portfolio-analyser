@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import com.hackathon.service.FirebaseUserService;
 
 @RestController
-@RequestMapping("/api/firebase")
+@RequestMapping("/firebase")
 public class FirebaseUserController {
 
     @Autowired
@@ -15,5 +15,10 @@ public class FirebaseUserController {
     @PostMapping("/register")
     public String registerUser(@RequestParam String email, @RequestParam String password) {
         return firebaseUserService.createUser(email, password);
+    }
+
+    @PostMapping("/login")
+    public String loginUser(@RequestParam String email, @RequestParam String password) {
+        return firebaseUserService.loginUser(email, password);
     }
 }

@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import com.hackathon.service.RecommendationService;
 
 @RestController
-@RequestMapping("/api/recommendations")  // Base URL for recommendation-related endpoints
+@RequestMapping("/recommendations")  // Base URL for recommendation-related endpoints
 public class RecommendationController {
 
     private final RecommendationService recommendationService;

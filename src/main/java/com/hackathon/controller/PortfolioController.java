@@ -5,14 +5,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import com.hackathon.dto.Portfolio;
-import com.hackathon.dto.Trade;
 import com.hackathon.service.PortfolioService;
 
 import java.io.IOException;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/portfolio")
+@RequestMapping("/portfolio")
 public class PortfolioController {
 
     private final PortfolioService portfolioService;
