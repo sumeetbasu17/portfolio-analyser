@@ -2,8 +2,12 @@ package com.hackathon.service;
 
 import java.io.IOException;
 import java.util.*;
+
+import org.springframework.stereotype.Service;
+
 import com.hackathon.dto.Trade;
 
+@Service
 public class PortfolioVectorGenerator {
 
     private List<String> distinctSectors; // To store distinct sectors

@@ -8,7 +8,9 @@ import java.io.IOException;
 import java.util.List;
 
 import org.bson.Document;
+import org.springframework.stereotype.Service;
 
+@Service
 public class PortfolioService {
 
     private final PortfolioRepository portfolioRepository;

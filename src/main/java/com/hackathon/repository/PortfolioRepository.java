@@ -12,7 +12,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.bson.Document;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public class PortfolioRepository {
 
     private MongoCollection<Document> portfolioCollection;

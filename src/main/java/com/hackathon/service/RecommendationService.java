@@ -9,9 +9,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.springframework.stereotype.Service;
+
 import com.hackathon.client.AlpacaClient;
 import com.hackathon.dto.Trade;
 
+@Service
 public class RecommendationService {
 
     private AlpacaClient alpacaClient;

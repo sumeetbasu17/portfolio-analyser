@@ -12,6 +12,9 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class AlpacaClient {
     private static final String BASE_URL = "https://paper-api.alpaca.markets/v2";
     private static final String DATA_URL = "https://data.alpaca.markets/v2";
@@ -20,11 +23,9 @@ public class AlpacaClient {
     private static final String API_SECRET = "Aun2P7vqMauzIbHkexfdyIn1hjB3LL2E9qVr8Nu3";
 
     private OkHttpClient httpClient;
-    private Gson gson;
 
     public AlpacaClient() {
         this.httpClient = new OkHttpClient();
-        this.gson = new Gson();
     }
 
     public List<Trade> getPositions() throws IOException {

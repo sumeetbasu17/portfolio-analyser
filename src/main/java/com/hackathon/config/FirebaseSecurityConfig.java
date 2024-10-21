@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 public class FirebaseSecurityConfig {
 
     @Bean
-    public FilterRegistrationBean<FirebaseAuthenticationFilter> firebaseAuthenticationFilter() {
+    public FilterRegistrationBean<FirebaseAuthenticationFilter> getFilterRegistrationBean() {
         FilterRegistrationBean<FirebaseAuthenticationFilter> registrationBean = new FilterRegistrationBean<>();
         registrationBean.setFilter(new FirebaseAuthenticationFilter());
         registrationBean.addUrlPatterns("/recommendations", "/portfolio", "/data");  // Protect specific endpoints
